@@ -4,7 +4,7 @@
   "description": "wrap the output of thought-store_syntax-parser in mongodb documents",
   "main": "src/wrap.js",
   "repository": "/",
-  "author": "spti <dannvx@gmail.com>",
+  "author": "gottfried",
   "license": "MIT",
   "private": false,
   "dependencies": {
