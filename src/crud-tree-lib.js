@@ -72,8 +72,8 @@ function buildTree(tree, maps) {
 
 }
 
-/*
-
+/**
+    @param tree a tree of nodes, processed by `describeToSave`
 */
 function saveDeepestAsync(tree, map, save) {
 

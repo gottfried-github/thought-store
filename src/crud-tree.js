@@ -199,6 +199,9 @@ class CrudTree extends Dev {
     }
   }
 
+  /**
+    @param map @description {ids: {"<node's id>": <node>}}
+  */
   saveTree(tree, map) {
     const treeDescribed = lib.describeToSave(tree, map)
     this.log('described tree to save, tree', treeDescribed)
