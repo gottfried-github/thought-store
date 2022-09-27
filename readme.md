@@ -5,9 +5,9 @@ The `crud-tree.js` and `crud-tree-lib.js` is the core, which `api.js` uses direc
 
 # Details
 ## Depth-first traversal
-1. Determine the depths of the nodes in a tree. E.g, [#L179](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L179)
+1. Determine the depths of the nodes in a tree. [#L179](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L179)
 2. At each level, visit the deepest nodes until terminal nodes are reached. E.g., [#L63](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L63), [#L87](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L87)
 3. Then, backtrack, saving the nodes along the way. E.g., [#L31](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L31)
-4. Determine the depths of the nodes in the tree, not taking into account the already saved nodes. E.g., [#L53](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L53)
+4. Determine the depths of the nodes in the tree, not taking into account the already traversed nodes. E.g., [#L53](https://github.com/gottfried-github/thought-store/blob/d2e0cbdee84e9be320f135d9b1fd7a31c666a28d/src/crud-tree-lib.js#L53)
 
 Repeat until the depths of the top nodes are zero.
